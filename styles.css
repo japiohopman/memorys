@@ -6,34 +6,42 @@
 body {
    background-image: linear-gradient(to bottom right, #fff987, lightgreen);
   height: 100vh;
-
+font-family: 'Rock Salt', cursive;
   color: blue;
-
 }
 h1{
   text-align: center;
+  font-weight: bold;
+  text-shadow: 3px 4px 2px black;
+  margin-top: 15px;
 }
-h2 {
+p{
   text-align: left;
+
 }
 .top{
   text-align: center;
   margin: auto;
 }
 .memory-game {
+  position: relative;
+top: 48px;
+
   display: flex;
   flex-wrap: wrap;
-  height: 338px;
-  width: 610px;
+  height: 448px;
+  width: 860px;
   margin: auto;
-  border: 5px solid lightgreen;
+  border: 10px solid lightgreen;
+  border-radius: 8px;
 }
 .memory-card{
-  width: calc(100px - 10px);
-  height: 100px;
+  width: 130px;
+  height: 130px;
   position: relative;
   perspective: 1000px;
   margin:  5px;
+
   transform-style: preserve-3d;
   transform: scale(1);
   transition:  transform .5s;
@@ -55,10 +63,56 @@ transform:  rotateY(180deg);
   height: 100%;
   width: 100%;
   padding: 2px;
-  border: 2px solid #000;
+border-radius: 8px;
   backface-visibility: hidden;
 }
 .front-card {
   transform: rotateY(180deg);
 
 }
+
+.p1, .p2, .p3, .p4{
+  color: #fff;
+  font-size: 1.1rem;
+  text-shadow: 3px 4px 2px black;
+text-align: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  position: absolute;
+
+}
+.p1{
+  background-color: red;
+  color: #fff;
+
+
+left: : 0px;
+top: 0px
+}
+
+.p2{
+  background-color: blue;
+
+right: 0px;
+top: 0px;
+}
+.p3{
+  background-color: green;
+  color: #fff;
+
+
+bottom: 0px;
+left: 0px;
+
+
+}
+.p4{
+  background-color: yellow;
+  color: #fff;
+
+
+bottom: 0px;
+right: 0px;
+}
+/* kutje bef hier ben ik */
